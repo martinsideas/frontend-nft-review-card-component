@@ -22,7 +22,7 @@ body {
     background-color: var(--dark-blue-card);
     width: 90vw;
     height: auto;
-    margin: 2vw auto;
+    margin: 4vw auto;
     display: flex;
     flex-direction: column;
     border-radius: 4vw;
@@ -31,7 +31,7 @@ body {
         width: 90%;
         height: auto;
         border-radius: 2vw;
-        margin: 20px auto;
+        margin: 5vw auto;
     }
     .card-content {
         width: 90%;
@@ -51,14 +51,17 @@ body {
             display: flex;
             justify-content: space-between;
             margin-bottom: 4vw;
-
+            
             .eth-price {
                 color: var(--cyan);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-size: 3vw;
-
+                
+                img {
+                    width: 3.5vw;
+                }
                 p {
                     margin-left: 1vw;
                     font-size: 4vw;
@@ -70,6 +73,9 @@ body {
                 align-items: center;
                 margin-left: 1vw;
                 
+                img {
+                    width: 4.5vw;
+                }
                 p {
                     margin-left: 1vw;
                     font-size: 4vw;
@@ -93,8 +99,8 @@ body {
                 background-color: var(--white);
                 img {
                     position: absolute;
-                    left: 0.2vw;
-                    top: 0.2vw;
+                    left: 0.25vw;
+                    top: 0.25vw;
                     width: 10vw;
                 }
             }
@@ -107,8 +113,109 @@ body {
         }
     }
 }
-
-
-/*-----------------------------------------------------*/
-.attribution { font-size: 11px; text-align: center; color: var(--white);}
+.attribution { font-size: 3vw; text-align: center; color: var(--white);}
 .attribution a { color: hsl(228, 45%, 44%); }
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+@media screen and (min-width: 380px){
+    .card {
+        background-color: var(--dark-blue-card);
+        width: 342px;
+        height: auto;
+        margin: 4vw auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15.2px;
+
+        > img {
+            width: 307.8px;
+            height: 307.8px;
+            border-radius: 7.6px;
+            margin: 19px auto;
+        }
+        .card-content {
+            width: 307.8px;
+            margin: 3.8px auto;
+            color: var(--soft-blue);
+
+            > h2 {
+                color: var(--white);
+                font-size: 26.6px;
+                margin-bottom: 11.4px;
+            }
+            .about {
+                font-size: 19px;
+                margin-bottom: 22.8px;
+            }
+            .eth{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15.2px;
+                
+                .eth-price {
+                    color: var(--cyan);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 11.4px;
+                    
+                    img {
+                        width: 13.3px;
+                    }
+                    p {
+                        margin-left: 3.8px;
+                        font-size: 15.2px;
+                    }
+                }
+                .days-left {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 3.8px;
+                    
+                    img {
+                        width: 17.1px;
+                    }
+                    p {
+                        margin-left: 3.8px;
+                        font-size: 15.2px;
+                    }
+                }
+            }
+            hr {
+                margin-bottom: 15.2px;
+            }
+            .creator {
+                display: flex;
+                align-items: center;
+                font-size: 15.2px;
+                margin-bottom: 15.2px;
+
+                .img-bg {
+                    position: relative;
+                    width: 39.9px;
+                    height: 39.9px;
+                    border-radius: 50%;
+                    background-color: var(--white);
+                    img {
+                        position: absolute;
+                        left: 0.95px;
+                        top: 0.95px;
+                        width: 38px;
+                    }
+                }
+                p {
+                    margin-left: 15.2px;
+                    span {
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+    .attribution {
+        font-size: 11.4px;
+    }
+}
+/*-----------------------------------------------------*/
