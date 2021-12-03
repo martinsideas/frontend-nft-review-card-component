@@ -1,0 +1,114 @@
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --dark-blue-main: hsl(217, 54%, 11%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --family: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--family);
+    background-color: var(--dark-blue-main);
+}
+
+.card {
+    background-color: var(--dark-blue-card);
+    width: 90vw;
+    height: auto;
+    margin: 2vw auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4vw;
+
+    > img {
+        width: 90%;
+        height: auto;
+        border-radius: 2vw;
+        margin: 20px auto;
+    }
+    .card-content {
+        width: 90%;
+        margin: 1vw auto;
+        color: var(--soft-blue);
+
+        > h2 {
+            color: var(--white);
+            font-size: 7vw;
+            margin-bottom: 3vw;
+        }
+        .about {
+            font-size: 5vw;
+            margin-bottom: 6vw;
+        }
+        .eth{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4vw;
+
+            .eth-price {
+                color: var(--cyan);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3vw;
+
+                p {
+                    margin-left: 1vw;
+                    font-size: 4vw;
+                }
+            }
+            .days-left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 1vw;
+                
+                p {
+                    margin-left: 1vw;
+                    font-size: 4vw;
+                }
+            }
+        }
+        hr {
+            margin-bottom: 4vw;
+        }
+        .creator {
+            display: flex;
+            align-items: center;
+            font-size: 4vw;
+            margin-bottom: 4vw;
+
+            .img-bg {
+                position: relative;
+                width: 10.5vw;
+                height: 10.5vw;
+                border-radius: 50%;
+                background-color: var(--white);
+                img {
+                    position: absolute;
+                    left: 0.2vw;
+                    top: 0.2vw;
+                    width: 10vw;
+                }
+            }
+            p {
+                margin-left: 4vw;
+                span {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+
+
+/*-----------------------------------------------------*/
+.attribution { font-size: 11px; text-align: center; color: var(--white);}
+.attribution a { color: hsl(228, 45%, 44%); }

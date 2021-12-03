@@ -1,0 +1,157 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --dark-blue-main: hsl(217, 54%, 11%);
+  --dark-blue-card: hsl(216, 50%, 16%);
+  --dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --family: 'Outfit', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: var(--family);
+  background-color: var(--dark-blue-main);
+}
+
+.card {
+  background-color: var(--dark-blue-card);
+  width: 90vw;
+  height: auto;
+  margin: 2vw auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 4vw;
+}
+
+.card > img {
+  width: 90%;
+  height: auto;
+  border-radius: 2vw;
+  margin: 20px auto;
+}
+
+.card .card-content {
+  width: 90%;
+  margin: 1vw auto;
+  color: var(--soft-blue);
+}
+
+.card .card-content > h2 {
+  color: var(--white);
+  font-size: 7vw;
+  margin-bottom: 3vw;
+}
+
+.card .card-content .about {
+  font-size: 5vw;
+  margin-bottom: 6vw;
+}
+
+.card .card-content .eth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4vw;
+}
+
+.card .card-content .eth .eth-price {
+  color: var(--cyan);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vw;
+}
+
+.card .card-content .eth .eth-price p {
+  margin-left: 1vw;
+  font-size: 4vw;
+}
+
+.card .card-content .eth .days-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1vw;
+}
+
+.card .card-content .eth .days-left p {
+  margin-left: 1vw;
+  font-size: 4vw;
+}
+
+.card .card-content hr {
+  margin-bottom: 4vw;
+}
+
+.card .card-content .creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4vw;
+  margin-bottom: 4vw;
+}
+
+.card .card-content .creator .img-bg {
+  position: relative;
+  width: 10.5vw;
+  height: 10.5vw;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.card .card-content .creator .img-bg img {
+  position: absolute;
+  left: 0.2vw;
+  top: 0.2vw;
+  width: 10vw;
+}
+
+.card .card-content .creator p {
+  margin-left: 4vw;
+}
+
+.card .card-content .creator p span {
+  color: var(--white);
+}
+
+/*-----------------------------------------------------*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white);
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
